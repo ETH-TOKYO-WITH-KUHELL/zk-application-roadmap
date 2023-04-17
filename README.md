@@ -56,8 +56,8 @@ await contract.getUserInfo(formatBytes32String(_name))
 ### 1.1.2 Identifying the Problem
 - 알기 전에는 commitment 값이 private key 값인 줄 알았지만, 이게 public key 값이었다.
 - 그래서 이 값이 노출되는게 문제가 되는 줄 알았지만 아니었다.
-- 그러면 public 값을 통해 본인임을 증명하게 되면 login 하고 바로 proof를 갔는데, 비밀번호 입력 창으로 이동해서 그 값을 파라미터로 받아서 그걸 `new Idenenty('parameter')` 한 걸 사용?
-- 그렇게해서 생성된 
+- 그러면 public 값을 통해 본인임을 증명하게 되면 login 하고 바로 proof를 갔는데, 비밀번호 입력 창으로 이동해서 비밀번호 값을 파라미터로 받아서 `new Idenenty('parameter')` 를 통해 나온 값을 setStorage해주면 문제가 해결될 것 같다
+
 
 ### 1.1.3 TO-BE
 ```tsx
